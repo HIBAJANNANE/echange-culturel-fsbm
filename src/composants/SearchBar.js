@@ -10,6 +10,11 @@ const SearchBar = () => {
         id="search"
         label="Recherche"
         variant="outlined"
+        size="small"
+        sx={{
+          borderRadius: '10px',
+          width: '300px' // Modifier la largeur de la barre de recherche
+        }}
         InputProps={{
           endAdornment: (
             <InputAdornment position="end">
@@ -21,4 +26,5 @@ const SearchBar = () => {
     </Box>
   );
 };
+
 export default SearchBar;

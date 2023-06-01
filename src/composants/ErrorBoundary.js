@@ -42,7 +42,7 @@ const styles = {
   icon: {
     fontSize: '48px',
     marginBottom: '10px',
-    color: 'blue', // Couleur de l'icône
+    color: 'blue',
   },
   content: {
     display: 'flex',
@@ -53,8 +53,9 @@ const styles = {
     fontSize: '24px',
     fontWeight: 'bold',
     marginBottom: '10px',
-    color: 'red', // Couleur du titre
-    textAlign: 'left', // Aligner le texte à gauche
+    color: 'red',
+    textAlign: 'left',
+    marginLeft: '-5px', // Ajout de la marge à gauche
   },
   text: {
     fontSize: '18px',
@@ -63,7 +64,7 @@ const styles = {
   errorContainer: {
     textAlign: 'center',
     marginTop: '20px',
-    color: 'red', // Couleur du texte d'erreur
+    color: 'red',
   },
 };
 
