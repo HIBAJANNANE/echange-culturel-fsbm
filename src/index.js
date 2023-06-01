@@ -5,51 +5,53 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
-  RouterProvider,
 } from "react-router-dom";
+import Acceuil from './pages/Acceuil';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import FsbmEnChiffre from './pages/FsbmEnChiffre';
 import EventList from './pages/EventList';
 import MasterMaroc from './pages/MasterMaroc';
 
-const router = createBrowserRouter([
-  {
-    path: "login",
-    element: <Login/>,
-  },
-  {
-    path: "SignUp",
-    element: <SignUp/>,
-  },
-  {
-    path: "/",
-    element: <App/>,
-  },
-  {
-    path: "FsbmEnChiffre",
-    element: <FsbmEnChiffre/>,
-  },
-  {
-    path: "EventList",
-    element: <EventList/>,
-  },
- 
-  {
-    path: "MasterMaroc",
-    element: <MasterMaroc/>,
-   },
-  // {
-  //   path: "établissements-uh2c",
-  //   element: <établissements_uh2c/>,
-  // },
-]);
-
+export default function getRoutes() {
+  return createBrowserRouter([
+    {
+      path: "login",
+      element: <Login/>,
+    },
+    {
+      path: "SignUp",
+      element: <SignUp/>,
+    },
+    {
+      path: "/",
+      element: <Acceuil/>,
+    },
+    {
+      path: "FsbmEnChiffre",
+      element: <FsbmEnChiffre/>,
+    },
+    {
+      path: "EventList",
+      element: <EventList/>,
+    },
+   
+    {
+      path: "MasterMaroc",
+      element: <MasterMaroc/>,
+     },
+    // {
+    //   path: "établissements-uh2c",
+    //   element: <établissements_uh2c/>,
+    // },
+  ]);
+  
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-        <RouterProvider router={router} />
+        <App/>
   </React.StrictMode>
 );
 
