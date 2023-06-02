@@ -20,11 +20,11 @@ export default function PersistentDrawerLeft() {
        {/* Import the Navbar component here */}
       
       <Main>
-        <Typography>
+        {/* <Typography> */}
           <Master />
-        </Typography>
+        {/* </Typography> */}
         <br />
-        <Typography></Typography>
+        {/* <Typography></Typography> */}
       </Main>
     </Box>
   );
